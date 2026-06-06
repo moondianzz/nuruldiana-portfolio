@@ -51,21 +51,18 @@ const Projects = () => {
   return (
     <section id="projects" className="projects">
       <div className="container">
-        <div className="section-number">01</div>
-        <h2 className="section-title">Selected Work</h2>
+        <h2 className="section-heading" data-num="03">Selected Work</h2>
 
         <div className="projects-list">
           {projects.map((project, index) => (
             <div key={index} className="project-item">
               <div className="project-number">{String(index + 1).padStart(2, '0')}</div>
               <div className="project-content">
-                <h3 className="project-title">{project.title}</h3>
-                {project.award && (
-                  <div className="project-status">{project.award}</div>
-                )}
-                <div className="project-meta">
+                <div className="project-top">
                   <span className="project-type">{project.type}</span>
+                  {project.award && <span className="project-status">{project.award}</span>}
                 </div>
+                <h3 className="project-title">{project.title}</h3>
                 <p className="project-description">{project.description}</p>
                 <div className="project-tech">
                   {project.technologies.map((tech, techIndex) => (

@@ -45,8 +45,7 @@ const Skills = () => {
   return (
     <section id="skills" className="skills">
       <div className="container">
-        <div className="section-number" data-aos="fade-up">03</div>
-        <h2 className="section-title" data-aos="fade-up">Technical Skills</h2>
+        <h2 className="section-heading" data-num="02">Technical Skills</h2>
 
         <div className="skills-category" data-aos="fade-up" data-aos-delay="100">
           <h3 className="category-title">

@@ -47,8 +47,7 @@ const Achievements = () => {
   return (
     <section id="achievements" className="achievements">
       <div className="container">
-        <div className="section-number">02</div>
-        <h2 className="section-title">Achievements & Awards</h2>
+        <h2 className="section-heading" data-num="06">Achievements & Awards</h2>
 
         <div className="achievements-list">
           {achievements.map((achievement, index) => (

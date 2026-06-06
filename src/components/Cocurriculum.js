@@ -80,7 +80,7 @@ const Cocurriculum = () => {
   return (
     <section id="cocurriculum" className="cocurriculum">
       <div className="container">
-        <h2 className="cocurri-heading">Co-Curriculum</h2>
+        <h2 className="section-heading" data-num="07">Co-Curriculum</h2>
         <p className="cocurri-subheading">
           Beyond academics — leading, organising, and serving the university community.
         </p>

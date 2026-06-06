@@ -28,8 +28,7 @@ const Contact = () => {
   return (
     <section id="contact" className="contact">
       <div className="container">
-        <div className="section-number">06</div>
-        <h2 className="section-title">Get In Touch</h2>
+        <h2 className="section-heading" data-num="08">Get In Touch</h2>
         <p className="section-subtitle">
           Open to collaboration on innovative projects and consulting opportunities.
           Let's build something amazing together!

@@ -63,7 +63,7 @@ const Experience = () => {
   return (
     <section id="experience" className="experience">
       <div className="container">
-        <h2 className="exp-heading">Experience & Certifications</h2>
+        <h2 className="section-heading" data-num="04">Experience & Certifications</h2>
 
         <div className="exp-block">
           <div className="exp-block-label">Work Experience</div>

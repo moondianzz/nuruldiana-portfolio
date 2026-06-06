@@ -10,7 +10,7 @@ const About = () => {
   return (
     <section id="about" className="about">
       <div className="container">
-        <h2 className="about-heading">About</h2>
+        <h2 className="section-heading" data-num="01">About</h2>
 
         <p className="about-bio">
           Software Engineering student at Universiti Malaysia Sabah, currently interning as a

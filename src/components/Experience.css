@@ -5,9 +5,6 @@
 }
 
 .exp-heading {
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  font-weight: 700;
-  letter-spacing: -1px;
   margin-bottom: 3rem;
 }
 
