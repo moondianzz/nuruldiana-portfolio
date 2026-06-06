@@ -1,4 +1,18 @@
 import './Cocurriculum.css';
+import p1 from '../assets/cocurriculum/photo_2026-06-07_01-59-07.jpg';
+import p2 from '../assets/cocurriculum/photo_2026-06-07_01-59-10.jpg';
+import p3 from '../assets/cocurriculum/photo_2026-06-07_01-59-12.jpg';
+import p4 from '../assets/cocurriculum/photo_2026-06-07_01-59-15.jpg';
+import p5 from '../assets/cocurriculum/photo_2026-06-07_01-59-17.jpg';
+import p6 from '../assets/cocurriculum/photo_2026-06-07_01-59-20.jpg';
+import p7 from '../assets/cocurriculum/photo_2026-06-07_01-59-23.jpg';
+import p8 from '../assets/cocurriculum/photo_2026-06-07_01-59-25.jpg';
+import p9 from '../assets/cocurriculum/photo_2026-06-07_01-59-28.jpg';
+import p10 from '../assets/cocurriculum/photo_2026-06-07_01-59-30.jpg';
+import p11 from '../assets/cocurriculum/photo_2026-06-07_01-59-34.jpg';
+import p12 from '../assets/cocurriculum/photo_2026-06-07_01-59-37.jpg';
+import p13 from '../assets/cocurriculum/photo_2026-06-07_01-59-40.jpg';
+import p14 from '../assets/cocurriculum/photo_2026-06-07_01-59-42.jpg';
 
 const communityServices = [
   {
@@ -60,19 +74,21 @@ const activities = [
   }
 ];
 
-// Add your photos to src/assets/cocurriculum/ and list them here
 const photos = [
-  { src: null, caption: 'JIWA 2.0 Borneo Relawan' },
-  { src: null, caption: 'Student Council (MPP UMS)' },
-  { src: null, caption: 'MPP UMS Election' },
-  { src: null, caption: 'Majlis Apresiasi MPP 2022/2023' },
-  { src: null, caption: 'Sports Day with MPP' },
-  { src: null, caption: 'UMS Pusat Islam Talk' },
-  { src: null, caption: 'JIWA 1.0 Pulau Banggi' },
-  { src: null, caption: 'MSM30 - Pembimbing Suai Mesra' },
-  { src: null, caption: 'Minggu Suai Mesra Kali Ke-30' },
-  { src: null, caption: 'MPP Election Campaign' },
-  { src: null, caption: 'MAHEPA25 Award' }
+  { src: p1, caption: 'Festival Tamu Gadang' },
+  { src: p2, caption: 'MPP UMS Gathering' },
+  { src: p3, caption: 'MPP UMS Election' },
+  { src: p4, caption: 'Majlis Apresiasi MPP 2022/2023' },
+  { src: p5, caption: 'Majlis Apresiasi MPP 2022/2023' },
+  { src: p6, caption: 'Sports Day with MPP' },
+  { src: p7, caption: 'UMS Pusat Islam Talk' },
+  { src: p8, caption: 'JIWA 1.0 — Pulau Banggi' },
+  { src: p9, caption: 'MSM30 — Pembimbing Suai Mesra' },
+  { src: p10, caption: 'Minggu Suai Mesra Kali Ke-30' },
+  { src: p11, caption: 'MPP Election Campaign' },
+  { src: p12, caption: 'MAHEPA25 Award' },
+  { src: p13, caption: 'Co-Curriculum Activity' },
+  { src: p14, caption: 'Co-Curriculum Activity' },
 ];
 
 const Cocurriculum = () => {
