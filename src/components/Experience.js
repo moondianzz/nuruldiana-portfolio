@@ -5,7 +5,7 @@ const experiences = [
   {
     role: 'Finance Systems and Solutions Intern',
     company: 'PETRONAS Finance Modernisation',
-    department: 'Finance Shared Services (FSS) - Xp&A Team',
+    department: 'Finance Shared Services (FSS) - xP&A Team',
     location: 'Kuala Lumpur',
     period: 'March 2026 – August 2026',
     current: true,
@@ -68,7 +68,7 @@ const Experience = () => {
         <div className="exp-block">
           <div className="exp-block-label">Work Experience</div>
           {experiences.map((exp, i) => (
-            <div key={i} className="acc-item">
+            <div key={i} className={`acc-item ${openExp === i ? 'is-open' : ''}`}>
               <button className="acc-header" onClick={() => setOpenExp(openExp === i ? null : i)}>
                 <div className="acc-left">
                   <span className="acc-title">{exp.role}</span>
@@ -77,7 +77,7 @@ const Experience = () => {
                 <div className="acc-right">
                   <span className="acc-period">{exp.period}</span>
                   {exp.current && <span className="acc-badge">Current</span>}
-                  <span className={`acc-arrow ${openExp === i ? 'open' : ''}`}>↓</span>
+                  <span className="acc-toggle">+</span>
                 </div>
               </button>
               {openExp === i && (
@@ -97,7 +97,7 @@ const Experience = () => {
         <div className="exp-block">
           <div className="exp-block-label">Certifications</div>
           {certificates.map((cert, i) => (
-            <div key={i} className="acc-item">
+            <div key={i} className={`acc-item ${openCert === i ? 'is-open' : ''}`}>
               <button className="acc-header" onClick={() => setOpenCert(openCert === i ? null : i)}>
                 <div className="acc-left">
                   <span className="acc-title">{cert.name}</span>
@@ -105,7 +105,7 @@ const Experience = () => {
                 </div>
                 <div className="acc-right">
                   <span className="acc-period">{cert.date}</span>
-                  <span className={`acc-arrow ${openCert === i ? 'open' : ''}`}>↓</span>
+                  <span className="acc-toggle">+</span>
                 </div>
               </button>
               {openCert === i && (

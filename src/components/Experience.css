@@ -16,16 +16,29 @@
 }
 
 .exp-block-label {
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.3);
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
 }
 
-/* Accordion */
+/* Accordion cards */
 .acc-item {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  background: #111;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  margin-bottom: 0.75rem;
+  overflow: hidden;
+  transition: border-color 0.25s ease;
+}
+
+.acc-item:hover {
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.acc-item.is-open {
+  border-color: rgba(255, 255, 255, 0.15);
 }
 
 .acc-header {
@@ -36,31 +49,26 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.25rem 0;
+  padding: 1.2rem 1.4rem;
   cursor: pointer;
   gap: 1rem;
   text-align: left;
-  transition: opacity 0.2s ease;
-}
-
-.acc-header:hover {
-  opacity: 0.75;
 }
 
 .acc-left {
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 0.3rem;
 }
 
 .acc-title {
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 600;
   color: #fff;
 }
 
 .acc-sub {
-  font-size: 0.82rem;
+  font-size: 0.8rem;
   color: rgba(255, 255, 255, 0.4);
 }
 
@@ -72,42 +80,63 @@
 }
 
 .acc-period {
-  font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.35);
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.3);
   letter-spacing: 0.3px;
 }
 
 .acc-badge {
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   padding: 0.2rem 0.6rem;
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 20px;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.55);
   letter-spacing: 0.5px;
   text-transform: uppercase;
 }
 
-.acc-arrow {
-  font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.4);
-  transition: transform 0.3s ease;
-  display: inline-block;
+/* Plus/minus toggle icon */
+.acc-toggle {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+  font-weight: 300;
+  transition: all 0.25s ease;
+  line-height: 1;
 }
 
-.acc-arrow.open {
-  transform: rotate(180deg);
+.acc-item:hover .acc-toggle {
+  border-color: rgba(255, 255, 255, 0.5);
+  color: #fff;
 }
 
+.acc-item.is-open .acc-toggle {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #fff;
+  transform: rotate(45deg);
+}
+
+/* Body */
 .acc-body {
-  padding: 0 0 1.5rem;
+  padding: 0 1.4rem 1.4rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
   animation: fadeDown 0.25s ease;
 }
 
 .acc-dept {
-  font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.35);
-  margin-bottom: 1rem;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.3);
+  margin: 0.9rem 0 0.9rem;
   letter-spacing: 0.3px;
+  text-transform: uppercase;
 }
 
 .acc-list {
@@ -115,28 +144,31 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
+  gap: 0.55rem;
 }
 
 .acc-list li {
-  font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.6);
-  line-height: 1.6;
-  padding-left: 1.2rem;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.65;
+  padding-left: 1rem;
   position: relative;
 }
 
 .acc-list li::before {
-  content: '–';
+  content: '·';
   position: absolute;
   left: 0;
-  color: rgba(255, 255, 255, 0.25);
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 1.1rem;
+  line-height: 1.5;
 }
 
 .acc-desc {
-  font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.6);
-  line-height: 1.6;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.65;
+  margin-top: 0.9rem;
 }
 
 @keyframes fadeDown {
@@ -149,13 +181,18 @@
     padding: 4rem 0;
   }
 
+  .acc-header {
+    padding: 1rem 1.1rem;
+    align-items: flex-start;
+  }
+
+  .acc-body {
+    padding: 0 1.1rem 1.1rem;
+  }
+
   .acc-right {
     flex-direction: column;
     align-items: flex-end;
     gap: 0.4rem;
-  }
-
-  .acc-header {
-    align-items: flex-start;
   }
 }
