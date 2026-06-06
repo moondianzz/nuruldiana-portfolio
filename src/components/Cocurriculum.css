@@ -1,0 +1,238 @@
+.cocurriculum {
+  padding: 6rem 0 4rem;
+  background: #0a0a0a;
+  color: #fff;
+}
+
+.cocurri-heading {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 0.75rem;
+}
+
+.cocurri-subheading {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.45);
+  margin-bottom: 3rem;
+  letter-spacing: 0.3px;
+}
+
+/* Photo strip */
+.photo-strip-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-bottom: 4rem;
+  cursor: grab;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.photo-strip-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.photo-strip-wrapper:active {
+  cursor: grabbing;
+}
+
+.photo-strip {
+  display: flex;
+  gap: 1rem;
+  padding: 0 2rem;
+  width: max-content;
+}
+
+.photo-card {
+  flex-shrink: 0;
+  width: 280px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #1a1a1a;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: transform 0.3s ease;
+}
+
+.photo-card:hover {
+  transform: scale(1.02);
+}
+
+.photo-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.photo-placeholder {
+  width: 100%;
+  height: 200px;
+  background: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.photo-placeholder span {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  padding: 0 1rem;
+  letter-spacing: 0.5px;
+}
+
+.photo-caption {
+  padding: 0.75rem 1rem;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 0.3px;
+}
+
+/* Blocks */
+.cocurri-block {
+  margin-bottom: 4rem;
+}
+
+.cocurri-block-title {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.35);
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Community service cards */
+.cocurri-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.cocurri-card {
+  background: #111;
+  padding: 1.5rem;
+  transition: background 0.3s ease;
+}
+
+.cocurri-card:hover {
+  background: #161616;
+}
+
+.cocurri-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  gap: 1rem;
+}
+
+.cocurri-role {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.06);
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+}
+
+.cocurri-date {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.3);
+  flex-shrink: 0;
+}
+
+.cocurri-programme {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.6rem;
+  line-height: 1.4;
+}
+
+.cocurri-desc {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.45);
+  line-height: 1.6;
+}
+
+/* Activities list */
+.activities-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.activity-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  gap: 2rem;
+  transition: padding-left 0.3s ease;
+}
+
+.activity-row:hover {
+  padding-left: 0.5rem;
+}
+
+.activity-row:last-child {
+  border-bottom: none;
+}
+
+.activity-role {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.2rem;
+}
+
+.activity-org {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.activity-period {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.3);
+  flex-shrink: 0;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+  .cocurriculum {
+    padding: 4rem 0 3rem;
+  }
+
+  .photo-strip {
+    padding: 0 1.5rem;
+  }
+
+  .photo-card {
+    width: 240px;
+  }
+
+  .cocurri-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .activity-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+  }
+
+  .activity-period {
+    color: rgba(255, 255, 255, 0.25);
+    font-size: 0.75rem;
+  }
+}

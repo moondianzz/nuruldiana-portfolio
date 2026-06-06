@@ -19,7 +19,8 @@ const Header = () => {
     setMenuOpen(false);
   };
 
-  const navItems = ['about', 'skills', 'projects', 'experience', 'education', 'achievements', 'contact'];
+  const navItems = ['about', 'skills', 'projects', 'experience', 'education', 'achievements', 'cocurriculum', 'contact'];
+  const navLabels = { cocurriculum: 'Co-Curriculum' };
 
   return (
     <header className={`header ${scrolled ? 'scrolled' : ''}`}>
@@ -33,7 +34,7 @@ const Header = () => {
         <nav className={`nav ${menuOpen ? 'nav-open' : ''}`}>
           {navItems.map(item => (
             <button key={item} onClick={() => scrollToSection(item)}>
-              {item.charAt(0).toUpperCase() + item.slice(1)}
+              {navLabels[item] || item.charAt(0).toUpperCase() + item.slice(1)}
             </button>
           ))}
         </nav>

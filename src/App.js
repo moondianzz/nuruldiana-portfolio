@@ -10,6 +10,7 @@ import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Education from './components/Education';
 import Achievements from './components/Achievements';
+import Cocurriculum from './components/Cocurriculum';
 import Contact from './components/Contact';
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
         <Experience />
         <Education />
         <Achievements />
+        <Cocurriculum />
         <Contact />
       </div>
     </>
