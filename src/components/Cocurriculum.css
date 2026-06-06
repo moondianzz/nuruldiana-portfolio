@@ -25,9 +25,6 @@
   margin-bottom: 4rem;
 }
 
-.photo-strip-wrapper:hover .photo-strip {
-  animation-play-state: paused;
-}
 
 .photo-strip {
   display: flex;
