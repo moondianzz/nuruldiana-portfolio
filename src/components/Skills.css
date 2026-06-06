@@ -45,15 +45,16 @@
 }
 
 .skill-card {
-  background: #111;
-  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: linear-gradient(var(--card-bg), var(--card-bg)) padding-box,
+              var(--border-gradient) border-box;
+  border: 1px solid transparent;
   padding: 1.25rem;
   border-radius: 8px;
-  transition: border-color 0.25s ease;
+  transition: opacity 0.25s ease;
 }
 
 .skill-card:hover {
-  border-color: rgba(255, 255, 255, 0.18);
+  opacity: 0.85;
 }
 
 .skill-header {
@@ -84,7 +85,7 @@
 .skill-progress {
   height: 100%;
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.5);
+  background: linear-gradient(90deg, #06b6d4, #818cf8);
   animation: progressAnimation 1.2s ease-in-out;
 }
 

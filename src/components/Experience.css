@@ -22,20 +22,21 @@
 
 /* Accordion cards */
 .acc-item {
-  background: #111;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(var(--card-bg), var(--card-bg)) padding-box,
+              var(--border-gradient) border-box;
+  border: 1px solid transparent;
   border-radius: 10px;
   margin-bottom: 0.75rem;
   overflow: hidden;
-  transition: border-color 0.25s ease;
+  transition: opacity 0.25s ease;
 }
 
 .acc-item:hover {
-  border-color: rgba(255, 255, 255, 0.18);
+  opacity: 0.85;
 }
 
 .acc-item.is-open {
-  border-color: rgba(255, 255, 255, 0.15);
+  opacity: 1;
 }
 
 .acc-header {
@@ -85,9 +86,10 @@
 .acc-badge {
   font-size: 0.65rem;
   padding: 0.2rem 0.6rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 20px;
-  color: rgba(255, 255, 255, 0.55);
+  background: linear-gradient(135deg, rgba(6,182,212,0.15), rgba(124,58,237,0.15));
+  border: 1px solid rgba(129,140,248,0.35);
+  color: #818cf8;
   letter-spacing: 0.5px;
   text-transform: uppercase;
 }
@@ -115,9 +117,9 @@
 }
 
 .acc-item.is-open .acc-toggle {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.4);
-  color: #fff;
+  background: linear-gradient(135deg, rgba(6,182,212,0.2), rgba(124,58,237,0.2));
+  border-color: #818cf8;
+  color: #818cf8;
   transform: rotate(45deg);
 }
 

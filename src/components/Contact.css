@@ -25,21 +25,19 @@
 }
 
 .contact-card {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  padding: 1.8rem;
-  border-radius: 15px;
+  background: linear-gradient(var(--card-bg), var(--card-bg)) padding-box,
+              var(--border-gradient) border-box;
+  border: 1px solid transparent;
+  padding: 1.5rem;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   gap: 1.2rem;
-  transition: all 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: opacity 0.25s ease;
 }
 
 .contact-card:hover {
-  background: rgba(255, 255, 255, 0.08);
-  transform: translateY(-5px);
-  border-color: rgba(167, 139, 250, 0.3);
+  opacity: 0.85;
 }
 
 .contact-icon {

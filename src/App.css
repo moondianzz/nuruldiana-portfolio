@@ -1,3 +1,9 @@
+:root {
+  --border-gradient: linear-gradient(135deg, #06b6d4, #7c3aed);
+  --accent: #818cf8;
+  --card-bg: #111;
+}
+
 * {
   margin: 0;
   padding: 0;
