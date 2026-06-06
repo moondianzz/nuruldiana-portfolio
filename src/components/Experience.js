@@ -4,7 +4,7 @@ import './Experience.css';
 const experiences = [
   {
     role: 'Finance Systems and Solutions Intern',
-    company: 'PETRONAS ICT',
+    company: 'PETRONAS Finance Modernisation',
     department: 'Finance Shared Services (FSS) - Xp&A Team',
     location: 'Kuala Lumpur',
     period: 'March 2026 – August 2026',
