@@ -74,22 +74,7 @@ const activities = [
   }
 ];
 
-const photos = [
-  { src: p1, caption: 'Festival Tamu Gadang' },
-  { src: p2, caption: 'MPP UMS Gathering' },
-  { src: p3, caption: 'MPP UMS Election' },
-  { src: p4, caption: 'Majlis Apresiasi MPP 2022/2023' },
-  { src: p5, caption: 'Majlis Apresiasi MPP 2022/2023' },
-  { src: p6, caption: 'Sports Day with MPP' },
-  { src: p7, caption: 'UMS Pusat Islam Talk' },
-  { src: p8, caption: 'JIWA 1.0 — Pulau Banggi' },
-  { src: p9, caption: 'MSM30 — Pembimbing Suai Mesra' },
-  { src: p10, caption: 'Minggu Suai Mesra Kali Ke-30' },
-  { src: p11, caption: 'MPP Election Campaign' },
-  { src: p12, caption: 'MAHEPA25 Award' },
-  { src: p13, caption: 'Co-Curriculum Activity' },
-  { src: p14, caption: 'Co-Curriculum Activity' },
-];
+const photos = [p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14];
 
 const Cocurriculum = () => {
   return (
@@ -104,16 +89,9 @@ const Cocurriculum = () => {
       {/* Horizontally scrollable photo strip */}
       <div className="photo-strip-wrapper">
         <div className="photo-strip">
-          {photos.map((photo, i) => (
+          {photos.map((src, i) => (
             <div key={i} className="photo-card">
-              {photo.src ? (
-                <img src={photo.src} alt={photo.caption} />
-              ) : (
-                <div className="photo-placeholder">
-                  <span>{photo.caption}</span>
-                </div>
-              )}
-              <div className="photo-caption">{photo.caption}</div>
+              <img src={src} alt={`Activity ${i + 1}`} />
             </div>
           ))}
         </div>
