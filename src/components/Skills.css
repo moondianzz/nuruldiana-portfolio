@@ -1,0 +1,134 @@
+.skills {
+  padding: 6rem 2rem;
+  background: transparent;
+  min-height: 100vh;
+}
+
+.section-number {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #a78bfa;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+}
+
+.section-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 4rem;
+  line-height: 1.2;
+}
+
+.skills-category {
+  margin-bottom: 3rem;
+}
+
+.category-title {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+}
+
+.badge.advanced {
+  background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);
+}
+
+.badge.intermediate {
+  background: linear-gradient(135deg, #a78bfa 0%, #8b5cf6 100%);
+}
+
+.badge.basic {
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.skill-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(167, 139, 250, 0.3);
+}
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+
+.skill-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.skill-percent {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #8b5cf6;
+}
+
+.skill-bar {
+  height: 8px;
+  background: #e9ecef;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skill-progress {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 1s ease;
+  animation: progressAnimation 1.5s ease-in-out;
+}
+
+.advanced-bar {
+  background: linear-gradient(90deg, #8b5cf6 0%, #6366f1 100%);
+}
+
+.intermediate-bar {
+  background: linear-gradient(90deg, #a78bfa 0%, #8b5cf6 100%);
+}
+
+.basic-bar {
+  background: linear-gradient(90deg, #6366f1 0%, #4f46e5 100%);
+}
+
+@keyframes progressAnimation {
+  from {
+    width: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .skills {
+    padding: 3rem 1rem;
+  }
+}

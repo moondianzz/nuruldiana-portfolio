@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../../../OneDrive/Documents/PlatformIO/Projects/bayufarm2"
+		},
+		{
+			"path": "../../../../../../xampp/htdocs/bayufarm"
+		}
+	],
+	"settings": {
+		"claudeCode.environmentVariables": [],
+		"claudeCode.claudeProcessWrapper": ""
+	}
+}
