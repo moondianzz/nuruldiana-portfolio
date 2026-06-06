@@ -3,6 +3,7 @@ import './Header.css';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,20 +16,26 @@ const Header = () => {
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     element?.scrollIntoView({ behavior: 'smooth' });
+    setMenuOpen(false);
   };
+
+  const navItems = ['about', 'skills', 'projects', 'experience', 'education', 'achievements', 'contact'];
 
   return (
     <header className={`header ${scrolled ? 'scrolled' : ''}`}>
       <div className="header-container">
         <div className="logo">Nuruldiana Zaidi</div>
-        <nav className="nav">
-          <button onClick={() => scrollToSection('about')}>About</button>
-          <button onClick={() => scrollToSection('skills')}>Skills</button>
-          <button onClick={() => scrollToSection('projects')}>Projects</button>
-          <button onClick={() => scrollToSection('experience')}>Experience</button>
-          <button onClick={() => scrollToSection('education')}>Education</button>
-          <button onClick={() => scrollToSection('achievements')}>Achievements</button>
-          <button onClick={() => scrollToSection('contact')}>Contact</button>
+        <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">
+          <span className={`bar ${menuOpen ? 'open' : ''}`}></span>
+          <span className={`bar ${menuOpen ? 'open' : ''}`}></span>
+          <span className={`bar ${menuOpen ? 'open' : ''}`}></span>
+        </button>
+        <nav className={`nav ${menuOpen ? 'nav-open' : ''}`}>
+          {navItems.map(item => (
+            <button key={item} onClick={() => scrollToSection(item)}>
+              {item.charAt(0).toUpperCase() + item.slice(1)}
+            </button>
+          ))}
         </nav>
       </div>
     </header>

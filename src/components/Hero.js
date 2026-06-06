@@ -20,11 +20,11 @@ const Hero = () => {
           <h1 className="hero-title">
             Hi, I'm <span className="highlight">Nuruldiana Zaidi</span>
           </h1>
-          <h2 className="hero-subtitle">CTO at Horizon Integrated | Software Engineer at Prosignal Consortium</h2>
+          <h2 className="hero-subtitle">Software Engineering Student | Finance Systems & Solutions Intern at PETRONAS ICT</h2>
           <p className="hero-description">
-            Building SportSphere, an AI-powered operating system for sports clubs. 3+ years of experience
-            shipping Flutter, Next.js, Firebase, and ML-powered products. Specializing in scalable
-            applications that combine modern web technologies with artificial intelligence.
+            Passionate about leveraging technology to solve real-world problems through IoT, AI, and web development.
+            Best FYP Project winner in System/VR/IoT category. Specializing in Power Platform development
+            and business process automation.
           </p>
           <div className="hero-buttons">
             <a href="#contact" className="btn btn-primary">Get In Touch</a>
