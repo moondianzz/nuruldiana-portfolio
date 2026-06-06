@@ -3,6 +3,7 @@ import './App.css';
 import Loader from './components/Loader';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import Marquee from './components/Marquee';
 import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
@@ -24,6 +25,7 @@ function App() {
       <div className={`App ${loading ? 'hidden' : 'visible'}`}>
         <Header />
         <Hero />
+        <Marquee />
         <About />
         <Skills />
         <Projects />
