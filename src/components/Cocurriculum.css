@@ -21,27 +21,24 @@
 /* Photo strip */
 .photo-strip-wrapper {
   width: 100%;
-  overflow-x: auto;
-  overflow-y: hidden;
+  overflow: hidden;
   margin-bottom: 4rem;
-  cursor: grab;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
 }
 
-.photo-strip-wrapper::-webkit-scrollbar {
-  display: none;
-}
-
-.photo-strip-wrapper:active {
-  cursor: grabbing;
+.photo-strip-wrapper:hover .photo-strip {
+  animation-play-state: paused;
 }
 
 .photo-strip {
   display: flex;
   gap: 1rem;
-  padding: 0 2rem;
   width: max-content;
+  animation: photo-scroll 35s linear infinite;
+}
+
+@keyframes photo-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 .photo-card {

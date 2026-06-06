@@ -89,7 +89,7 @@ const Cocurriculum = () => {
       {/* Horizontally scrollable photo strip */}
       <div className="photo-strip-wrapper">
         <div className="photo-strip">
-          {photos.map((src, i) => (
+          {[...photos, ...photos].map((src, i) => (
             <div key={i} className="photo-card">
               <img src={src} alt={`Activity ${i + 1}`} />
             </div>
