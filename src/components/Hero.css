@@ -93,8 +93,8 @@
   overflow: hidden;
   border: 2px solid transparent;
   background: linear-gradient(#0a0a0a, #0a0a0a) padding-box,
-              linear-gradient(135deg, #06b6d4, #7c3aed) border-box;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 0 0 30px rgba(129, 140, 248, 0.15);
+              linear-gradient(135deg, #d4922a, #8b4513) border-box;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 0 0 30px rgba(212, 146, 42, 0.15);
   animation: float 4s ease-in-out infinite;
 }
 

@@ -1,4 +1,4 @@
-.header {
+﻿.header {
   position: fixed;
   top: 0;
   left: 0;
@@ -106,7 +106,7 @@
   }
 }
 
-/* ── Mobile ── */
+/* Mobile */
 @media (max-width: 768px) {
   .hamburger {
     display: flex;

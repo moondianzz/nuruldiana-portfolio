@@ -1,6 +1,6 @@
-.education {
+﻿.education {
   padding: 6rem 0;
-  background: #0a0a0a;
+  background: #0f0f0f;
   color: #fff;
 }
 
@@ -54,9 +54,9 @@
   font-size: 0.65rem;
   padding: 0.2rem 0.6rem;
   border-radius: 20px;
-  background: linear-gradient(135deg, rgba(6,182,212,0.15), rgba(124,58,237,0.15));
-  border: 1px solid rgba(129,140,248,0.35);
-  color: #818cf8;
+  background: linear-gradient(135deg, rgba(212,146,42,0.1), rgba(139,69,19,0.1));
+  border: 1px solid rgba(212,146,42,0.35);
+  color: #d4922a;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -89,7 +89,7 @@
 .cgpa-value {
   font-size: 1.6rem;
   font-weight: 700;
-  color: #818cf8;
+  color: #d4922a;
   line-height: 1;
 }
 
@@ -112,7 +112,7 @@
 }
 
 .edu-highlights li::before {
-  content: '·';
+  content: '\00B7';
   position: absolute;
   left: 0;
   color: rgba(255, 255, 255, 0.25);

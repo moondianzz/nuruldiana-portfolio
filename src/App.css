@@ -1,7 +1,7 @@
 :root {
-  --border-gradient: linear-gradient(135deg, #06b6d4, #7c3aed);
-  --accent: #818cf8;
-  --card-bg: #111;
+  --border-gradient: linear-gradient(135deg, #d4922a, #8b4513);
+  --accent: #d4922a;
+  --card-bg: #1a1a1a;
 }
 
 * {
@@ -17,7 +17,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
-  background: #0a0a0a;
+  background: #0f0f0f;
   color: #fff;
 }
 
